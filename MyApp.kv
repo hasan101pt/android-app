@@ -1,0 +1,163 @@
+<MyGridLayout>
+    cols:1
+    
+
+    uber:uber
+    bolt:bolt
+    refund:refund
+    rent:rent
+    viaverde:viaverde
+    diesel:diesel
+    percent:percent
+
+
+
+
+    GridLayout:
+        cols:2
+        size: root.width, root.height
+        padding:10
+        spacing:10
+        
+        
+        
+        Label:
+            text: "Uber"
+            size_hint_y:None
+            height:50
+            size_hint_x:None
+            width:100
+            font_size:25
+            
+        TextInput:
+            id: uber
+            multiline:False
+            text:'0'
+            size_hint_y:None
+            height:50
+            size_hint_x:None
+            width:200
+        
+
+        Label:
+            text: "Bolt"
+            size_hint_y:None
+            height:50
+            size_hint_x:None
+            width:100
+            font_size:25
+
+        TextInput:
+            id: bolt
+            multiline:False
+            text:'0'
+            size_hint_y:None
+            height:50
+            size_hint_x:None
+            width:200
+
+        Label:
+            text: "Refund"
+            size_hint_y:None
+            height:50
+            size_hint_x:None
+            width:100
+            font_size:25
+        TextInput:
+            id: refund
+            multiline:False
+            text:'0'
+            size_hint_y:None
+            height:50
+            size_hint_x:None
+            width:200
+
+        Label:
+            text: "Rent"
+            size_hint_y:None
+            height:50
+            size_hint_x:None
+            width:100
+            font_size:25
+        TextInput:
+            id: rent
+            multiline:False
+            text:'0'
+            size_hint_y:None
+            height:50
+            size_hint_x:None
+            width:200
+
+        Label:
+            text: "ViaVerde"
+            size_hint_y:None
+            height:50
+            size_hint_x:None
+            width:100
+            font_size:25
+        TextInput:
+            id: viaverde
+            multiline:False
+            text:'0'
+            size_hint_y:None
+            height:50
+            size_hint_x:None
+            width:200
+
+        Label:
+            text: "Diesel"
+            size_hint_y:None
+            height:50
+            size_hint_x:None
+            width:100
+            font_size:25
+        TextInput:
+            id: diesel
+            multiline:False
+            text:'0'
+            size_hint_y:None
+            height:50
+            size_hint_x:None
+            width:200
+
+        Label:
+            text: "Percent(%)"
+            underline:True
+            size_hint_y:None
+            height:50
+            size_hint_x:None
+            width:100
+            #outline_color:(0,0,0)
+            #outline_width: 2
+            font_size:25
+        TextInput:
+            id: percent
+            multiline:False
+            text:'0'    
+            size_hint_y:None
+            height:50
+            size_hint_x:None
+            width:200   
+        
+        Button:
+            text:"Submit"
+            font_size:40
+            on_press: root.press()
+            id:total
+            size_hint:(None,None)
+            size:200,50
+            
+            background_color:0,1,0,1
+            background_normal: ''
+            
+            
+
+        Button:
+            text:"Clear"
+            font_size:40
+            on_press: root.clear()
+            size_hint:(None,None)
+            size:200,50
+            background_color:1,0,0,1
+            background_normal: ''
+
